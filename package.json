@@ -18,7 +18,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --coverage",
     "eject": "react-scripts eject",
-    "jsdoc": "jsdoc -c ./jsdoc.config.json -r -d ./docs"
+    "jsdoc": "jsdoc -c ./jsdoc.config.json -r -d ./docs",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -39,6 +41,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "react-test-renderer": "^18.2.0"
   }
 }
